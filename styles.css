@@ -1,0 +1,276 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container1
+{
+  border-radius: 10px;
+  width: 500px;
+  height: 200px;
+  margin-top: 287px;
+  margin-bottom: 287px;
+  background: #ffffff42;
+  position: relative;
+}
+
+.container1 h1
+{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0%;
+  padding: 0%;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.container1 p
+{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0%;
+  padding: 0%;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+body
+{
+  background: linear-gradient(45deg, #290207, #7f1010, #dd3e3e);
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 1.3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speaker-form-header
+{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  background-color: #f6f7f85d;
+  border: 1px solid #d6d9dc5d;
+  border-radius: 10px;
+  width: 100%;
+  margin: 15px 0;
+  padding: 50px;
+}
+
+.speaker-form-header h1
+{
+  font-size: 30px;
+  margin-bottom: 3px;
+}
+
+.speaker-form
+{
+  background-color: rgba(255, 255, 255, 0.363);
+  border: 1px solid #d6d9dc65;
+  border-radius: 10px;
+
+  width: 100%;
+  padding: 55px;
+  margin: 0 0 40px 0;
+}
+
+.form-row
+{
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type = 'text'],
+.form-row input[type = 'email']
+{
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 12px;
+}
+
+.form-row label
+{
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.form-row input[type = 'text']:invalid,
+.form-row input[type = 'email']:invalid
+{
+  border: 1px solid #e46668;
+  color: #e46668;
+  box-shadow: none;
+}
+
+.legacy-form-row
+{
+  border: none;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.legacy-form-row legend
+{
+  margin-bottom: 10px;
+}
+
+.legacy-form-row .radio-label
+{
+  display: block;
+  font-size: 14px;
+  padding: 0 20px 0  10px;
+}
+
+.legacy-form-row input[type = 'radio']
+{
+  margin-top: 2px;
+
+}
+
+.legacy-form-row .radio-label, 
+.legacy-form-row input[type = 'radio']
+{
+  float: left;
+}
+
+.form-row select 
+{
+  border-radius: 3px;
+  color: #636262;
+  margin-bottom: 2px;
+  width: 100%;
+  padding: 5px;
+  font-size: 14px; 
+  border: 1px solid #D6D9DC;
+  -webkit-appearance: none; 
+  outline: none;
+ }
+ 
+ .form-row select:focus
+ {
+  border: 3px solid #D6D9DC;
+ }
+ 
+ .form-row textarea 
+ {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  border: 1px solid #d6d9dc6c;
+  border-radius: 3px;
+
+  min-height: 150px;
+  margin-bottom: 5px;
+  padding: 7px;
+  resize: none;
+  outline: none;
+ }
+
+ .form-row .instructions 
+ {
+  color: #f7f7f7;
+  padding: 5;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+#date
+{
+  border-radius: 3px;
+  margin-top: 2px;
+  width: 250px;
+  border: none;
+  padding: 5px;
+  outline: none;
+  color: #636262;
+}
+
+#date:focus
+{
+  border: none;
+}
+
+@media only screen and (min-width: 700px)
+{
+  .speaker-form-header,
+  .speaker-form 
+  {
+    width: 600px;
+  }
+
+  .form-row
+  {
+    flex-direction: row;
+    align-items: flex-start; /* to avoid stretching */
+    margin-bottom: 20px;
+    height: initial;
+  }
+
+  .form-row input[type = 'text'],
+  .form-row input[type = 'email'],
+  .form-row select,
+  .form-row textarea
+  {
+    width: 250px;
+    height: initial;
+  }
+
+  .form-row label 
+  {
+    font-size: 14px;
+    text-align: right;
+    width: 150px;
+    margin-top: 2px;
+    padding-right: 15px;
+  }
+
+  .legacy-form-row 
+  {
+    margin-bottom: 5px;
+  }
+
+  .legacy-form-row legend
+  {
+    font-size: 14px;
+    width: 150px;
+    text-align: right;
+    align-items: flex-start;
+    padding-right: 15px;
+  }
+
+  .legacy-form-row legend 
+  {
+    float: left;
+  }
+
+  .form-row .instructions 
+  {
+    margin-left: 120px;
+  }
+
+  .form-row .checkbox-label 
+  {
+    margin-left: 150px;
+    width: auto;
+  }
+  
+  .form-row .instructions 
+  {
+    margin-left: 120px;
+  }
+}
